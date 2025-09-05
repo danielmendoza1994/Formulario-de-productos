@@ -1,0 +1,88 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Formulario de productos</title>
+</head>
+<body>
+    <form id="form-producto">
+        <h2>Formulario de productos</h2>
+
+        <!-- Código y nombre -->
+        <div class="form-group">
+            <div class="campo">
+                <label for="codigo">Código</label>
+                <input type="text" name="codigo" id="codigo">
+            </div>
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre">
+            </div>
+        </div>
+
+        <!-- Bodega y sucursal -->
+        <div class="form-group">
+            <div class="campo">
+                <label for="bodega">Bodega</label>
+                <select name="bodega" id="bodega">
+                    <option value="bodega-1">Bodega 1</option>
+                    <option value="bodega-2">Bodega 2</option>
+                    <option value="bodega-3">Bodega 3</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="sucursal">Sucursal</label>
+                <select name="sucursal" id="sucursal">
+                    <option value="sucursal-1">Sucursal 1</option>
+                    <option value="sucursal-2">Sucursal 2</option>
+                    <option value="sucursal-3">Sucursal 3</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Moneda y precio -->
+        <div class="form-group">
+            <div class="campo">
+                <label for="moneda">Moneda</label>
+                <select name="moneda" id="moneda">
+                    <option value="peso">Peso</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="precio">Precio</label>
+                <input type="text" name="precio" id="precio">
+            </div>
+        </div>
+
+        <!-- Material del producto -->
+        <div class="campo-material">
+            <label for="material-producto">Material del Producto</label>
+            <div class="opciones">
+                <input type="checkbox" id="material-1" name="material" value="Plástico">          
+                <label for="material-1">Plástico</label>
+                <input type="checkbox" id="material-2" name="material" value="Metal">
+                <label for="material-2">Metal</label>
+                <input type="checkbox" id="material-3" name="material" value="Madera">
+                <label for="material-3">Madera</label>
+                <input type="checkbox" id="material-4" name="material" value="Vidrio">
+                <label for="material-4">Vidrio</label>
+                <input type="checkbox" id="material-5" name="material" value="Textil">
+                <label for="material-5">Textil</label>
+            </div>
+        </div>
+
+        <!-- Descripción -->
+        <div class="campo">
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" rows="2" cols="20"></textarea>
+        </div>
+
+        <!-- Botón -->
+        <input class="btn" type="submit" value="Guardar producto">
+    </form> 
+    <script src="validaciones.js"></script> 
+</body>
+</html>
